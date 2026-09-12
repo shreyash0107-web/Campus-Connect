@@ -213,3 +213,4 @@ Avoid broad production redirect wildcards. Never disable RLS to fix a setup erro
 
 ## Future Improvements
 Not implemented: notifications, bookmarks, real-time updates, messaging, file/avatar uploads, verified university membership, multi-campus support, and moderation tools. These are intentionally outside the submission MVP.
+## Deployment Test
