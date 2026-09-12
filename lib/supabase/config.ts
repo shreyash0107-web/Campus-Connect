@@ -1,6 +1,11 @@
 export function supabaseConfig() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+   console.log("SUPABASE DEBUG:", {
+    hasUrl: !!url,
+    hasKey: !!key,
+    keyPrefix: key?.slice(0, 15),
+  });
   if (!url || !key || key.startsWith("sb_secret_")) return null;
   try {
     const parsed = new URL(url);
